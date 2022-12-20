@@ -1,0 +1,11 @@
+--- ucpp-1.3.2.orig/tune.h
++++ ucpp-1.3.2/tune.h
+@@ -71,7 +71,7 @@
+  * NO_LIBC_BUF and NO_UCPP_BUF.
+  */
+ /* #define NO_LIBC_BUF */
+-/* #define NO_UCPP_BUF */
++#define NO_UCPP_BUF
+ 
+ /*
+  * On Unix stations, the system call mmap() might be used on input files.

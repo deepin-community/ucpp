@@ -1,0 +1,27 @@
+Source: ucpp
+Section: interpreters
+Priority: extra
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Uploaders: Rene Engelhard <rene@debian.org>
+Build-Depends: debhelper (>= 9), dh-exec (>= 0.3)
+Standards-Version: 3.9.3
+Homepage: http://http://code.google.com/p/ucpp/
+
+Package: ucpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: embeddable, quick and light C preprocessor
+ A C preprocessor designed to be embeddable, quick, light and fully compliant
+ to ISO Standard 9899:1999, aka ISO C99, or simply, C99.
+
+Package: libucpp-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: embeddable, quick and light C preprocessor -- development
+ A C preprocessor designed to be embeddable, quick, light and fully compliant
+ to ISO Standard 9899:1999, aka ISO C99, or simply, C99.
+ .
+ This package contains the headers and library needed to embed ucpp.
+
